@@ -1,0 +1,94 @@
+/* 폰트 추가 */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+/* 페이지 설정 */
+body {
+    display: flex;
+    justify-content: center;
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+/* 상단 헤더 */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-text {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    align-items: center;
+}
+.horizontal-rule{
+    width: 1920px;
+    height: 1px;
+    border: 0;
+    background-color: black;
+}
+/* 중간 바디 */
+.body {
+    /* 위아래 중간정렬을 하고싶은데 모르겠다. */
+    display: flex;
+    flex-direction: column;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38.19px;
+}
+.text {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17.9px;
+}
+input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.71px;
+}
+.body input {
+    width: 355px;
+    height: 33px;
+}
+.helper {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.52px;
+    color: #FF0000;
+}
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-btn {
+    width: 355px;
+    height: 33px;
+    background-color: #ACA0EB;
+    color: white;
+}
+.sign-in {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.71px;
+    text-align: center;
+}
+.profile-img {
+    width: 149px;
+    height: 149px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    text-align: center;
+    line-height: 149px;
+    align-items: center;
+}
