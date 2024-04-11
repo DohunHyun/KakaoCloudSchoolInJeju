@@ -1,0 +1,9 @@
+.profile-img {
+    width: 149px;
+    height: 149px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    text-align: center;
+    line-height: 149px;
+    align-items: center;
+}

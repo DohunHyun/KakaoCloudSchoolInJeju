@@ -10,6 +10,11 @@
     text-align: center;
     width: 560px;
 }
+.test {
+    width: 800px;
+    display: flex;
+    align-self: flex-end;
+}
 .write-btn {
     width: 138px;
     height: 39px;

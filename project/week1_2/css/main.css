@@ -13,7 +13,7 @@ body {
 /* 상단 헤더 */
 .header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     text-align: center;
@@ -29,4 +29,12 @@ body {
     height: 1px;
     border: 0;
     background-color: black;
+}
+.post-info {
+    display: flex;
+    flex-direction: row;
+}
+.post-writer {
+    display: flex;
+    flex-direction: row;
 }
