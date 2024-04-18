@@ -24,10 +24,15 @@
     width: 138px;
     height: 39px;
     border-radius: 16px;
-    background-color: #ACA0EB;
+    /* background-color: #ACA0EB; */
     color: white;
+    border-width: 0;
 }
-
+.btn-inactive {
+    background-color: #ACA0EB;}
+.btn-active {
+    background-color: #7F6AEE;
+}
 .post-box {
     margin-top: 10px;
     padding: 16px;
