@@ -21,6 +21,35 @@ body {
     line-height: 32px;
     align-self: center;
 }
+#prev-btn {
+    visibility: hidden;
+}
+#header-profile {
+    visibility: hidden;
+}
+#header-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+#drop-down {
+    /* position: relative; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px, 24px, 10px, 24px;
+}
+.drop-down-box {
+    display: flex;
+    width: 115px;
+    height: 35px;
+    background-color: #D9D9D9;
+    font-weight: 400;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+}
 .horizontal-rule{
     width: 1920px;
     height: 1px;

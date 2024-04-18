@@ -23,7 +23,9 @@ hr {
     line-height: 32px;
     text-align: center;
 }
-
+#header-profile {
+    visibility: visible;
+}
 .body {
     display: flex;
     flex-direction: column;

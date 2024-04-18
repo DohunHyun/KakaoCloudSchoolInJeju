@@ -12,8 +12,23 @@
     <section>
         <div class="header">
             <div id="prev-btn"><</div>
-            <h1 class="header-text">아무 말 대잔치</h1>
-            <div></div>
+            <div class="header-text">
+                <p>아무 말 대잔치</p>
+            </div>
+            <div id="header-profile">
+                <img id="header-img" src="/sources/profile_img.jpeg">
+                <div id="drop-down" style="display: none;">
+                    <div class="drop-down-box">
+                        <a href="profileEdit.html">회원정보수정</a>
+                    </div>
+                    <div class="drop-down-box">
+                        <a href="passwordEdit.html">비밀번호수정</a>
+                    </div>
+                    <div class="drop-down-box">
+                        <a>로그아웃</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <hr class="horizontal-rule"/>
         <form class="body" onsubmit="return checkForm()">

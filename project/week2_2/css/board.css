@@ -1,3 +1,9 @@
+#prev-btn {
+    visibility: visible;
+}
+#header-profile {
+    visibility: visible;
+}
 .title {
     font-weight: 400;
     font-size: 24px;
