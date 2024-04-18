@@ -6,6 +6,7 @@ const withdrawalBtn = document.getElementById('withdrawal-btn');
 const modal = document.getElementById('modal');
 const modalCancelBtn = document.getElementById('modal-cancel-btn');
 const modalConfirmBtn = document.getElementById('modal-confirm-btn');
+let nicknameFlag = false;
 
 // 닉네임 유효성 검사
 nicknameInput.addEventListener('keyup', function() {

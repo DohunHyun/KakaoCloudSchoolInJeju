@@ -29,7 +29,7 @@
         </div>
     </div>
     <hr>
-    <div class="body">
+    <form class="body" onsubmit="return checkForm()">
         <div class="title">
             <p>게시글 작성</p>
         </div>
@@ -37,26 +37,33 @@
             <p><b>제목*</b></p>
         </div>
         <div class="center">
-            <input type="text" class="input-box" placeholder="제목을 입력해주세요.(최대 26글자)">
+            <input id="title-input" type="text" class="input-box" placeholder="제목을 입력해주세요.(최대 26글자)">
         </div>
         <div class="title2">
             <p><b>내용*</b></p>
         </div>
         <div>
-            <textarea placeholder="내용을 입력해주세요."></textarea>
-            <p class="helper-text">*helper text</p>
+            <textarea id="content-input" placeholder="내용을 입력해주세요."></textarea>
+            <p id="helper" class="helper-text"></p>
         </div>
         <div class="title2">
             <p><b>이미지</b></p>
         </div>
         <div class="horizontal">
-            <button class="file-btn">파일 선택</button>
-            <p class="file-msg">파일을 선택해주세요.</p>
+            <div class="filebox">
+                <label for="file">파일 찾기</label>
+                <input id="file" type="file">
+                <p id="file-name" class="file-msg">파일을 선택해주세요.</p>
+            </div>
+            <!-- <input id="file-btn" type="button" value="파일 선택" class="file-btn">
+            <input id="file" type="file" style="display: none;"></input>
+            <p class="file-msg">파일을 선택해주세요.</p> -->
         </div>
         <div class="center">
-            <button class="submit-btn">완료</button>
+            <button id="submit-btn" class="submit-btn">완료</button>
         </div>
-    </div>
-    
+    </form>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/postWrite.js"></script>
 </body>
 </html>
