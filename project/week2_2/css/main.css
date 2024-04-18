@@ -27,6 +27,9 @@ body {
 #header-profile {
     visibility: hidden;
 }
+#header-img:hover {
+    background-color: black;
+}
 #header-img {
     width: 36px;
     height: 36px;

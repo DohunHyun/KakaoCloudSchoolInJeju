@@ -7,7 +7,3 @@ document.getElementById('header-img').addEventListener('click', function() {
         drop.style.display = 'none';
     }
 })
-
-document.getElementById('prev-btn').style.display = none;
-
-document.getElementById('profile-header')
