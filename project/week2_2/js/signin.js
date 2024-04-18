@@ -129,9 +129,20 @@ function btnActive() {
     if(profileFlag && emailFlag && passwordFlag && passwordCheckFlag && nicknameFlag) {
         signinBtn.classList.remove('btn-inactive');
         signinBtn.classList.add('btn-active');
+        return true;
     } else {
         signinBtn.classList.add('btn-inactive');
         signinBtn.classList.remove('btn-active');
+        return false;
+    }
+}
+
+function checkForm() {
+    if(btnActive()) {
+        return true;
+    } else {
+        alert("입력 내용을 확인해주세요.");
+        return false;
     }
 }
 
