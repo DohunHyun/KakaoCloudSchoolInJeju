@@ -14,6 +14,9 @@ titleInput.addEventListener('keyup', function() {
         helper.innerText = "* 제목은 최대 26자까지 가능합니다.";
     } else {
         titleFlag = true;
+        if(contentInput.value.length != 0) {
+            contentFlag = true;
+        } 
     }
     btnActive();
 })
@@ -24,6 +27,9 @@ contentInput.addEventListener('keyup', function() {
 
     } else {
         contentFlag = true;
+        if(titleInput.value.length != 0) {
+            titleFlag = true;
+        }
     }
     btnActive();
 })
