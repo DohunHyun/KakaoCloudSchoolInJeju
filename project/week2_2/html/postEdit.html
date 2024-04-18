@@ -37,26 +37,30 @@
             <p><b>제목*</b></p>
         </div>
         <div class="center">
-            <input type="text" class="input-box" placeholder="제목을 입력해주세요.(최대 26글자)" value="제목1">
+            <input id="title-input" type="text" class="input-box" placeholder="제목을 입력해주세요.(최대 26글자)" value="제목1">
         </div>
         <div class="title2">
             <p><b>내용*</b></p>
         </div>
         <div>
-            <textarea placeholder="내용을 입력해주세요.">이전 내용</textarea>
-            <p class="helper-text">*helper text</p>
+            <textarea id="content-input" placeholder="내용을 입력해주세요.">이전 내용</textarea>
+            <p id="helper" class="helper-text"></p>
         </div>
         <div class="title2">
             <p><b>이미지</b></p>
         </div>
         <div class="horizontal">
-            <button class="file-btn">파일 선택</button>
-            <p class="file-msg">기존 파일 명</p>
+            <div class="filebox">
+                <label for="file">파일 찾기</label>
+                <input id="file" type="file">
+                <p id="file-name" class="file-msg">파일을 선택해주세요.</p>
+            </div>
         </div>
         <div class="center">
-            <button class="submit-btn">수정하기</button>
+            <button id="modify-btn" class="submit-btn">수정하기</button>
         </div>
     </div>
-    
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/postEdit.js"></script>
 </body>
 </html>

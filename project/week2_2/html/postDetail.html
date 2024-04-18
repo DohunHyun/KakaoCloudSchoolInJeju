@@ -46,8 +46,8 @@
                 </div>
             </div>
             <div>
-                <button class="btn">수정</button>
-                <button class="btn">삭제</button>
+                <button id="post-modify-btn" class="btn">수정</button>
+                <button id="post-delete-btn" class="btn">삭제</button>
             </div>
         </div>
         <hr class="inbody-hr">
@@ -71,11 +71,11 @@
         <hr class="inbody-hr">
         <div class="comment-write">
             <div>
-                <input type="text" placeholder="댓글을 남겨주세요!"></textarea>
+                <input id="comment-input" type="text" placeholder="댓글을 남겨주세요!"></textarea>
             </div>
             <hr class="inbody-hr">
             <div class="btn-area">
-                <button class="comment-btn">댓글 등록</button>
+                <button id="comment-btn" class="comment-btn">댓글 등록</button>
             </div>
         </div>
         <div class="comment-list">
@@ -98,8 +98,8 @@
                 </div>
                 <div>
                     <div>
-                        <button class="btn">수정</button>
-                        <button class="btn">삭제</button>
+                        <button id="comment-modify-btn" class="btn">수정</button>
+                        <button id="comment-delete-btn" class="btn">삭제</button>
                     </div>
                 </div>
             </div>
@@ -129,6 +129,29 @@
             </div>
         </div>
     </div>
-    
+
+    <!-- 모달창 -->
+    <div id="post-modal" class="modal">
+        <div class="modal-popup">
+            <h3>게시글을 삭제하시겠습니까?</h3>
+            <p>삭제한 내용은 복구 할 수 없습니다.</p>
+            <div>
+                <button id="post-modal-cancel-btn" class="modal-btn">취소</button>
+                <button id="post-modal-confirm-btn" class="modal-btn">확인</button>
+            </div>
+        </div>
+    </div>
+    <div id="comment-modal" class="modal">
+        <div class="modal-popup">
+            <h3>댓글을 삭제하시겠습니까?</h3>
+            <p>삭제한 내용은 복구 할 수 없습니다.</p>
+            <div>
+                <button id="comment-modal-cancel-btn" class="modal-btn">취소</button>
+                <button id="comment-modal-confirm-btn" class="modal-btn">확인</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/postDetail.js"></script>
 </body>
 </html>
