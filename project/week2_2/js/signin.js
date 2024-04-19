@@ -149,3 +149,43 @@ function checkForm() {
 document.getElementById('prev-btn').addEventListener('click', function() {
     location.href='login.html';
 })
+
+let userList = "";
+loadUserList();
+function loadUserList() {
+    return fetch("/json/userList.json")
+        .then( (res) => res.json())
+        .then( (json) => json.items);
+}
+
+loadUserList().then((items) => {
+    userList = items;
+})
+
+function checkEmail(input) {
+    return userList.map((item) => item.email)
+        .find(email=>email === input);
+}
+
+emailInput.addEventListener('change', function() {
+    if(checkEmail(emailInput.value)) {
+        emailHelper.innerText = "* 중복된 이메일 입니다.";
+        emailFlag = false;
+    } else {
+        
+    }
+})
+
+function checkNickname(input) {
+    return userList.map((item) => item.nickName)
+        .find(nickname => nickname === input);
+}
+
+nicknameInput.addEventListener('change', function() {
+    if(checkNickname(nicknameInput.value)) {
+        nicknameHelper.innerText = "* 중복된 닉네임 입니다.";
+        nicknameFlag = false;
+    } else {
+
+    }
+})
