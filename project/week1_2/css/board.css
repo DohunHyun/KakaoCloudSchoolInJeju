@@ -1,3 +1,27 @@
+/*
+모든 CSS 파일에서 중복 요소가 많이 발생하고 있습니다. CSS 요소는 재사용이 가능하며 아래와 같은 규칙이 있습니다.
+
+- HTML 에서 아래와 같이 CSS 를 불러왔다고 가정합니다.
+```html
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/board.css">
+```
+이 때 main.css 에서 불러와진 속성과 board.css 에서 불러와진 속성이 충돌할 경우 (현재는 없지만) 내가 의도하지 않은 스타일이 보여져서 혼란에 빠집니다.
+이를 방지하기 위해서 공통으로 사용되는 요소는 하나에 모아 놓습니다.
+통상적으로 공통되는 CSS 요소는 style.css, app.css, style.css 등과 같이 공통적인 것을 모아놨음을 알 수 있을만한 이름의 파일 하나에 스타일을 모아놓습니다.
+
+github_light.css 라는 파일을 추가해 놨습니다.
+이 파일을 보시면 서비스 전체에서 사용하는 CSS 변수는 전부 이 파일에 몰빵쳐져 있습니다.
+추가적으로 img.png 파일은 github의 아무 페이지가 불러와 질때 CSS가 어떻게 포함되어있는지를 나타내는 이미지 입니다.
+
+주절주절 설명이 길었지만 이 설명을 한 문장으로 바꿔보면 "공통요소는 묶어서 재사용한다"가 되겠습니다.💁🏻‍‍💁
+
+HTML/CSS 관련 리뷰내용은 아래 노션 페이지에 모두 포함되어 있습니다.
+- https://www.notion.so/goorm/276e4c626eff4c1fbb1c86e1494bf7d4?v=a4f47bb7683740cdb612cc5edff55dbd
+
+카누다의 경우도 위 노션 페이지에 언급 된 사항과 모두 겹치므로 한번 읽어봐주세요!
+
+*/
 .title {
     font-weight: 400;
     font-size: 24px;
